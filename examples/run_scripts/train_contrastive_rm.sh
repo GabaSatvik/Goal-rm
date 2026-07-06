@@ -29,5 +29,5 @@ read -r -d '' training_commands <<EOF
 EOF
 
 if [[ ${1} != "slurm" ]]; then
-     python -m deepspeed.launcher.launch $training_commands
+     python -m deepspeed.launcher.runner $training_commands
 fi
