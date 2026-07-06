@@ -9,7 +9,8 @@ read -r -d '' training_commands <<EOF
      --eval_steps -1 \
      --train_batch_size 64 \
      --micro_train_batch_size 1 \
-     --pretrain nvidia/OpenMath-CodeLlama-7b-Python-hf \
+     --pretrain Qwen/Qwen2.5-Math-1.5B-Instruct \
+     --max_samples 40000 \
      --bf16 \
      --max_epochs 1 \
      --max_len 2048 \
